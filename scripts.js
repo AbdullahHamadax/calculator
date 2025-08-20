@@ -56,9 +56,9 @@ buttons.forEach((btn) => {
 
 function handleInput(btn) {
   if (!isNaN(btn)) {
-    if (op === "" && first.length < 9) {
+    if (op === "" && first.length < 10) {
       first += btn;
-    } else if (op !== "" && second.length < 9) {
+    } else if (op !== "" && second.length < 10) {
       second += btn;
     }
   } else if (btn === "Ac") {
@@ -70,9 +70,9 @@ function handleInput(btn) {
       op = btn;
     }
   } else if (btn === ".") {
-    if (op === "" && !first.includes(".") && first.length < 9) {
+    if (op === "" && !first.includes(".") && first.length < 10) {
       first += first === "" ? "0." : ".";
-    } else if (op !== "" && !second.includes(".") && second.length < 9) {
+    } else if (op !== "" && !second.includes(".") && second.length < 10) {
       second += second === "" ? "0." : ".";
     }
   } else if (btn === "=") {
