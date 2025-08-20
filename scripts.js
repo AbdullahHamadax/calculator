@@ -70,9 +70,9 @@ function handleInput(btn) {
       op = btn;
     }
   } else if (btn === ".") {
-    if (op === "" && !first.includes(".") && first.length < 8) {
+    if (op === "" && !first.includes(".") && first.length < 9) {
       first += first === "" ? "0." : ".";
-    } else if (op !== "" && !second.includes(".") && second.length < 8) {
+    } else if (op !== "" && !second.includes(".") && second.length < 9) {
       second += second === "" ? "0." : ".";
     }
   } else if (btn === "=") {
