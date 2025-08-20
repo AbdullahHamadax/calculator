@@ -143,11 +143,11 @@ function evaluate() {
     }
   }
 
+  result = Number(result).toFixed(2);
+
   first = result.toString();
   second = "";
   op = "";
-
-  result = Number(result).toFixed(2);
 
   updateDisplay();
 }
