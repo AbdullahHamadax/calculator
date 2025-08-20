@@ -4,16 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="scripts.js" defer></script>
   </head>
-  <body class="flex flex-col items-center justify-center min-h-screen">
-    <div class="bg-[#16191E] w-[20%] rounded-xl p-7">
-      <div id="display-content" class="text-gray-400 font-bold text-right">
-        <p id="user-input" class="text-lg">
-          6000<span class="text-[#2C95C5]">/</span>2
-        </p>
-        <p id="result" class="mt-1 text-3xl text-white">=3000</p>
+  <body
+    class="flex flex-col items-center justify-center min-h-screen bg-gray-900"
+  >
+    <div
+      class="bg-[#16191E] w-[90%] sm:w-[70%] md:w-[50%] lg:w-[30%] xl:w-[20%] rounded-[2rem] p-7"
+    >
+      <div class="flex flex-col gap-[2rem]">
+        <div id="display-content" class="text-gray-400 font-bold text-right">
+          <div
+            id="user-input"
+            class="text-xl sm:text-2xl md:text-3xl flex justify-end gap-1"
+          >
+            <p id="first-number"></p>
+            <span class="text-[#2C95C5]" id="operator"></span>
+            <p id="second-number"></p>
+          </div>
+          <p
+            id="result"
+            class="mt-1 text-3xl sm:text-4xl md:text-5xl text-white"
+          ></p>
+        </div>
+
+        <div
+          id="container"
+          class="grid grid-cols-4 gap-3 sm:gap-4 text-center font-semibold mt-10"
+        ></div>
       </div>
-      <div id="container"></div>
     </div>
   </body>
 </html>
