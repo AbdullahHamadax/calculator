@@ -143,11 +143,14 @@ function evaluate() {
     }
   }
 
-  result = Number(result).toFixed(2);
+  result = Number(result).toFixed(3);
 
-  first = result.toString();
+  if (result.replace(".", "").length > 12) {
+    result = "Overflow! Please clear.";
+    return;
+  }
+
+  first = result;
   second = "";
   op = "";
-
-  updateDisplay();
 }
