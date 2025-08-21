@@ -42,7 +42,7 @@ buttons.forEach((btn) => {
     "-": "bg-[#2C95C5] text-white py-3 rounded-2xl text-xl font-bold hover:bg-[#fff] hover:text-black cursor-pointer",
     "+": "bg-[#2C95C5] text-white py-3 rounded-2xl text-xl font-bold hover:bg-[#fff] hover:text-black cursor-pointer",
     "=": "bg-[#2C95C5] text-white py-3 rounded-2xl row-span-2 text-xl font-bold flex items-center justify-center hover:bg-[#fff] hover:text-black cursor-pointer",
-    0: "bg-[#2F3135] text-[#2C95C5] text-2xl py-3 rounded-2xl col-span-2 text-xl hover:bg-[#404247] cursor-pointer",
+    0: "bg-[#2F3135] text-[#2C95C5] text-2xl py-3 rounded-2xl col-span-2 hover:bg-[#404247] cursor-pointer",
     default:
       "bg-[#2F3135] text-[#2C95C5] text-2xl py-3 rounded-2xl hover:bg-[#404247] cursor-pointer",
   };
